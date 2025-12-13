@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--NOMBRE DE LA WEB-->
+    <title>Urban | Contacto</title>
+
+    <!--LOGO DE LA PESTAÑA DE LA WEB-->
+    <link rel="shortcut icon" href="../logo/logoHeader.jpg">
+
+    <!-- TIPOGRAFÍAS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600;700&family=Oswald:wght@900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/Styles.css">
+</head>
+<body class="body_formulario">
+
+<header class="barra_header">
+    <div class="logo_header">
+        <img src="../logo/logoHeader.jpg" width="250" height="100" alt="Logo Urban">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="#">¿Quiénes Somos?</a></li>
+            <li><a href="#">Ofertas</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="contenedor_todo_formulario">
+
+        <div class="contenedor_imagen_formulario">
+            <img src="../img/formulario/chica_para_formulario.png" alt="Chica ilustrativa para formulario">
+        </div>
+
+        <div class="fondo_formulario">
+            <section class="forms">
+                <form action="/submit" method="post">
+
+                    <h1>Contáctanos</h1>
+
+                    <!-- ESTADO -->
+                    <label for="estados_mexico">Estado</label>
+                    <select name="estado" id="estados_mexico" required>
+                        <option value="" disabled selected>Seleccionar Estado</option>
+                        <option value="aguascalientes">Aguascalientes - Aguascalientes</option>
+                        <option value="baja_california">Baja California - Mexicali</option>
+                        <option value="baja_california_sur">Baja California Sur - La Paz</option>
+                        <option value="campeche">Campeche - Campeche</option>
+                        <option value="chiapas">Chiapas - Tuxtla Gutiérrez</option>
+                        <option value="chihuahua">Chihuahua - Chihuahua</option>
+                        <option value="coahuila">Coahuila - Saltillo</option>
+                        <option value="colima">Colima - Colima</option>
+                        <option value="durango">Durango - Durango</option>
+                        <option value="guanajuato">Guanajuato - Guanajuato</option>
+                        <option value="guerrero">Guerrero - Chilpancingo</option>
+                        <option value="hidalgo">Hidalgo - Pachuca</option>
+                        <option value="jalisco">Jalisco - Guadalajara</option>
+                        <option value="mexico">México - Toluca</option>
+                        <option value="michoacan">Michoacán - Morelia</option>
+                        <option value="morelos">Morelos - Cuernavaca</option>
+                        <option value="nayarit">Nayarit - Tepic</option>
+                        <option value="nuevo_leon">Nuevo León - Monterrey</option>
+                        <option value="oaxaca">Oaxaca - Oaxaca de Juárez</option>
+                        <option value="puebla">Puebla - Puebla</option>
+                        <option value="queretaro">Querétaro - Querétaro</option>
+                        <option value="quintana_roo">Quintana Roo - Chetumal</option>
+                        <option value="san_luis_potosi">San Luis Potosí - San Luis Potosí</option>
+                        <option value="sinaloa">Sinaloa - Culiacán</option>
+                        <option value="sonora">Sonora - Hermosillo</option>
+                        <option value="tabasco">Tabasco - Villahermosa</option>
+                        <option value="tamaulipas">Tamaulipas - Ciudad Victoria</option>
+                        <option value="tlaxcala">Tlaxcala - Tlaxcala</option>
+                        <option value="veracruz">Veracruz - Xalapa</option>
+                        <option value="yucatan">Yucatán - Mérida</option>
+                        <option value="zacatecas">Zacatecas - Zacatecas</option>
+                        <option value="cdmx">Ciudad de México - CDMX</option>
+                    </select>
+
+                    <!-- NOMBRE -->
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+
+                    <!-- EMAIL -->
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" placeholder="Ingresa un email válido" required>
+
+                    <!-- MENSAJE -->
+                    <label for="explicacion">Mensaje</label>
+                    <textarea name="texto_explicacion" id="explicacion" placeholder="Ingresa tu mensaje" minlength="20" required></textarea>
+
+                    <!-- TÉRMINOS -->
+                    <div class="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">Acepto los <a href="./Terminos_del_servicio.html" target="_blank">Términos de servicio</a></label>
+                    </div>
+
+                    <input class="button_formulario" type="submit" value="Enviar Solicitud">
+                </form>
+            </section>
+        </div>
+    </section>
+</main>
+
+<footer class="footer_formulario">
+    <div class="footer_cols">
+        <div class="footer_col">
+            <h3>POLÍTICA</h3>
+            <ul>
+                <li><a href="#">Envío y devoluciones</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Métodos de pago</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_col">
+            <h3>ATENCIÓN AL CLIENTE</h3>
+            <ul>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Atención al Cliente</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_col">
+            <h3>REDES</h3>
+            <ul>
+                <li><a href="#">Snapchat</a></li>
+                <li><a href="#">TikTok</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_col">
+            <h3>MENÚ</h3>
+            <ul>
+                <li><a href="#">Mujer</a></li>
+                <li><a href="#">Hombre</a></li>
+                <li><a href="#">Belleza</a></li>
+                <li><a href="#">Oferta</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer_payments">
+        <div class="fp_left">
+            <span class="brand">URBAN</span>
+        </div>
+
+        <div class="fp_center">
+            <span class="secure_text">Pago seguro con</span>
+        </div>
+
+        <div class="fp_right">
+            <img src="../img/metodos_de_pago/paypal.png" alt="PayPal">
+            <img src="../img/metodos_de_pago/amex.png" alt="American Express">
+            <img src="../img/metodos_de_pago/mastercard.png" alt="Mastercard">
+            <img src="../img/metodos_de_pago/visa.png" alt="Visa">
+            <img src="../img/metodos_de_pago/ApplePay.png" alt="Apple Pay">
+        </div>
+    </div>
+
+    <div class="footer_bottom">
+        <div class="container_text">© 2035 URBAN. Todos los derechos reservados.</div>
+    </div>
+</footer>
+
+<button id="btnArriba">↑</button>
+
+<script>
+    const btnArriba = document.getElementById("btnArriba");
+    window.addEventListener("scroll", () => {
+        btnArriba.style.display = window.scrollY > 400 ? "block" : "none";
+    });
+
+    btnArriba.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+</script>
+
+</body>
+</html>
