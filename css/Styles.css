@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -9,589 +10,597 @@ body, p, button, a {
     font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3 {
-    font-family: "Josefin Sans", sans-serif;
-}
-
-/* ---------------- HEADER NEGRO ---------------- */
-
-.barra_header {
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem;
-}
-
-.barra_header ul {
-    list-style: none;
-    display: flex;
-    gap: 0.5rem;
-}
-
-.barra_header li {
-    display: inline-block;
-    margin: 0.2rem;
-    padding: 0.2rem 0.6rem;
-    border-radius: 10px;
-    transition: border-color 0.3s ease;
-}
-
-.barra_header a {
-    font-size: 1.05rem;
-    text-decoration: underline;
-    color: white;
-    transition: color 0.3s ease;
-}
-
-.barra_header li:hover a {
-    color: rgb(168, 168, 168);
-    text-decoration: none;
-}
-
-
-
-/* ----- Busqueda de productos -------- */
-
-.busqueda input {
-    background-color: transparent;
-    border: 2px solid #7e75f6;
-    border-radius: 12px;
-    width: 400px;
-    height: 1.4rem;
-    color: #7e75f6;
-    padding-left: 8px;
-}
-
-.busqueda input::placeholder {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    color: #a29dff;
-    opacity: 0.7;
-    font-style: italic;
-}
-
-/* ---------------- BARRA DE DESCUENTO ---------------- */
-
-.barra_descuentos_header {
-    background-color: #7e75f6;
-    height: 8vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1.6rem;
-}
-
-/* Iconos GIF redes */
-
-.iconos_redes a img {
-    width: 29px;
-    height: 29px;
-    margin-left: 0.7rem;
-    object-fit: cover;
-    transition: transform .2s ease;
-}
-
-.iconos_redes a img:hover {
-    transform: scale(1.15);
-}
-
-/* ---------- IMAGEN HEADER ---------- */
-
-.imagen_header {
-    background-image: url(../img/Header.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 90vh;
-}
-
-.imagen_header h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 2rem;
-    color: rgb(69, 69, 69);
-    margin-top: 0.5rem;
-}
-
-.imagen_header h2 {
-    margin-top: 5rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 4.7rem;
-    margin-top: 0.5rem;
-    color: #5952bc;
-}
-
-.Texto-header-imagen {
-    padding: 2rem;
-    width: 60vh;
-    height: 90vh;
-}
-
-.barra-inferior{
-    bottom: 0;
-    width: 100%;      
-    object-fit: cover;
-}
-
-/* ---------- BUTTON HEADER ---------- */
-
-#button-header {
-    width: 40vb;
-    height: 15vh;
-    margin-top: 2rem;
-}
-
-.Boton_header {
-    margin-top:1rem;
-    padding: 0.2%;
-    width: 10rem;
-    height: 2.1rem;
-    background-color: #000000;
-    border-radius: 19px;
-    font-size: 1.1rem;
-    font-weight: 400;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    text-align: center;
-    color: white;
-    transition: 0.5s;
-}   
-
-.Boton_header:hover{
-    background-color:transparent;
-    border:1.2px solid black;
-    color: rgb(94, 94, 94);
-    transition: border-color 0.3s ease, background-color 0.5s ease;
-}
-
-
-
-/* ---------- SECCION LO MAS VENDIDO ---------- */
-
-.Texto-inicial {
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.ropa-mujer {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 20px; 
-    margin-top: 1px;
-}
-
-
-/* CARD DE LOS PRODICTOS MAS VENDIDOS */
-
-.card-producto {
-    width: 320px;
-    background: transparent;
-    border-radius: 10px;
-    overflow: hidden;
-    font-family: "Josefin Sans", sans-serif;
-    padding-bottom: 10px;
-    margin: 1rem;
-   transition: box-shadow 0.3s ease;
-}
-
-.card-producto:hover {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-}
-
-/* Imagen card*/
-.img-producto {
-    width: 100%;
-    height: 402px;
-    border-radius:15px;
-    padding: 0.5rem;
-}
-
-/* Título card*/
-.titulo-producto {
-    margin:4px;
-    font-size:15px;
-    color: #333;
-}
-
-
-/* Caja del precio + carrito */
-.decimales {
-    font-size: 14px;     
-    font-weight:100px;
-    font-weight:400;
-}
-
-
-.precio-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-    margin-top: 5px;
-}
-
-/* Precio en estilo SHEIN */
-.precio {
-    font-size: 20px;
-    color: #ff4d4d;
-}
-
-/* Cuadrito de descuento */
-.descuento {
-    background: #ffe0e0;
-    color: #ff4d4d;
-    padding: 3px 7px;
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-/* Botón carrito redondo */
-.btn-carrito {
-    background:transparent;
-    border: 1px solid #000000;
-    border-radius: 12px;
-    width: 65px;
-    height: 25px;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-}
-
-.btn-carrito:hover {
- transform: scale(1.1);
- transition:  0.3s ease;
- border: 1px solid #ff0000;
-}
-
-
-/* ---------- SECCION DEPORTIVO ---------- */
-
-
-/* SECCION DE REGALA DEPORTE*/
-
-.caja_fondo_ropadeportiva{
-    margin: 0.7rem;
-}
-
-.imagen_fondo_deporte {
-    display: block; 
-    margin: 0 auto; 
-    max-width: 100%; 
-    height: auto;
-}
-
-.seccion_regala_deporte h1{
-    font-family: 'Oswald', Impact, sans-serif;
-    text-align: center;
-    font-size: 4.3rem; 
-    font-weight: 400; 
-    color: black; 
-    margin-top: 30px;
-    padding: 0.9rem;
-}
-
-.seccion_regala_deporte {
-    position: relative; 
-    width: 100%;
-    padding: 1rem 0; 
-    text-align: center; 
-}
-
-
-.caja_contenido_ropadeportiva {
-
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    margin-top: -1.5rem; 
-    width: 100%;
-}
-
-
-
-/* Subtítulo: "Regalos diseñados para..." */
-.subtitulo_deporte {
-    font-size: 1.1rem;
-    font-weight: 400; 
-    margin: 0.5rem 0 1.0rem 0;
-    color: black; 
-}
-
-
-/* Estilo del botón */
-.boton_regalos {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 0.9rem 1rem;
-    margin-bottom: 2rem;
-    font-size: 0.9rem;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 29px; 
-    width: 10rem;
-}
-
-.boton_regalos:hover {
-    background-color: #929292;
-    transform: scale(1.1);
-    transition:  0.3s ease;
-}
-
-
-/*COLORES EN TENDENCIA*/
-.titulo_tendencia{
-    margin:0;
-    padding:1.5rem;
-    background-color:transparent;
-}
-
-.titulo_tendencia h3{
-    font-size: 1.5rem;
-    font-weight: 900;
-}
-
-/* ---------- SECCION DEPORTIVO BARRA---------- */
-
-/*BARRA DE COLORES DE TENDENCIA*/
-
-.contenedor_color_ropadeportiva {
-    width: 100%;
-    height: 37rem;
-    background-color: transparent;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-
-    /* padding corregido para acercar la barra */
-    padding: 1rem 2.5rem ;
-
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;  /* elimina scroll vertical */
-    object-fit: cover;
-    scroll-behavior: smooth;
-}
-
-/* Barra horizontal */
-.contenedor_color_ropadeportiva::-webkit-scrollbar {
-    height: 7px; /* tamaño de la barra */
-}
-
-
-
-.contenedor_color_ropadeportiva::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.contenedor_color_ropadeportiva::-webkit-scrollbar-thumb {
-    background: #000000;
-    border-radius: 9px;
-}
-
-
-/*Tamaño de las imagenes de los modelos de tendencia*/
-.contenedor_color_ropadeportiva img {
-    width: 460px;
-    height: 450px;
-}
-
-/*contenedores de ropa teportiva por individual*/
-.Contenedor_imagen_deporte {
-    width: 650px;
-    height: 550px;
-    background-color: transparent;
-    margin-right: 1rem;
-}
-
-/*contenedor de ropa deportiva*/
-.contenedor_texto_ropadeportida {
-    background-color: transparent;
-    margin: 0.9rem;
-    height: 50px;
-}
-
-/*contenedor del texto de la ropa deportiva*/
-.contenedor_texto_ropadeportida h4 {
-    margin-left: 2rem;
-    font-size: 1.4rem;
-    font-weight: 500;
-    padding-top: 1rem;
-    color: black;
-}
-
-/* ---------- SECCION DEPORTIVO MODELO DE TENIS---------- */
-
-/* CONTENEDOR GENERAL */
-.apartado_deportivo {
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #000; /* solo detrás del panel izquierdo */
-    position: relative;
-}
-
-/* PANEL IZQUIERDO CON FONDO NEGRO */
-.contenido {
-    width: 40%;
-    color: white;
-    padding: 80px;
-    background: black;
-}
-
-.contenido h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-.contenido p {
-    margin-top: 20px;
-    font-size: 1.2rem;
-}
-
-/*Boton de la seccion de la odelo de tenis*/
-.boton {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 25px;
-    border: 1px solid white;
-    color: white;
-    border-radius: 20px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.boton:hover {
-    background: white;
-    color: black;
-}
-
-/* IMAGEN PRINCIPAL A LA DERECHA MODELO DE TENIS*/
-.imagen_principal {
-    width: 60%;
-    height: 100%;
-    overflow: hidden;
-}
-
-/*Tamaño de la imagen de la modelo de tenis*/
-.imagen_principal img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* BARRA INFERIOR “SALE” */
-.barra_sale {
-    width: 100%;
-    background: #111;
-    color: white;
-    font-size: 1.5rem;
-    padding: 10px 0;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.sale_inner {
-    animation: mover 5s linear infinite;
-}
-
-.barra_sale {
-    width: 100%;
-    height: 70px;
-    background-image: url(../img/tu-imagen-sale.png);
-    background-repeat: repeat-x;
-    background-size: contain;
-}
-
-
-/* Animación de desplazamiento horizontal */
-@keyframes mover {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-}
-
-
-
-/* ---------- SECCION CALZADO  ---------- */
-
-.contenedor_titulo_calzado{
-    margin-top:2rem;
-    padding: 0.5rem;
-    width:100%;
-    background-color: #fafafa;
-}
-
-.contenedor_tenis_casuales{
-    display: flex;
-    background-color:transparent;
-    width:100%;
-    justify-content: right;
-    height:36rem;
-    margin-bottom: 23px;
-    padding: 2rem;
-
-}
-
-.contenedor_titulo_calzado h2{
-    background-color:transparent;
-    width:100%;
-    text-align:right;
-    padding:0.5rem;
-    padding-right:4rem;
-    color: black;
-}
-
-.contenedor_tenis img{
-    width: 100%;
-    height: 300px;
-}
-
-.contenedor_tenis_dos img{
-    width: 100%;
-    height: 300px;
-}
-
-.contenedor_tenis_dos h3{
-    padding:1.2rem;
-}
-
-.contenedor_tenis h3{
-    padding:1.2rem;
-}
-
-
-.Conetenedor_modelo_tenis_casuales{
+
+/* RESPONSIVE PARA CELULAR , TABLET & DESKTOP */
+
+@media only screen and (min-width: 769px) { 
+
+    /*DESKTOP*/
+
+    /* ---------------- HEADER NEGRO ---------------- */
+
+    .barra_header {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+
+        ul {
+        list-style: none;
+        display: flex;
+        gap: 0.5rem;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0.2rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 10px;
+            transition: border-color 0.3s ease;
+        }
+
+        a {
+            font-size: 1.05rem;
+            text-decoration: underline;
+            color: white;
+            transition: color 0.3s ease;
+        }
+    }
+
+    .barra_header li:hover a {
+        color: rgb(168, 168, 168);
+        text-decoration: none;
+    }
+
+
+
+    /* ----- Busqueda de productos -------- */
+
+    .busqueda input {
+        background-color: transparent;
+        border: 2px solid #7e75f6;
+        border-radius: 12px;
+        width: 400px;
+        height: 1.4rem;
+        color: #7e75f6;
+        padding-left: 8px;
+    }
+
+    .busqueda input::placeholder {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        color: #a29dff;
+        opacity: 0.7;
+        font-style: italic;
+    }
+
+    /* ---------------- BARRA DE DESCUENTO ---------------- */
+
+    .barra_descuentos_header {
+        background-color: #7e75f6;
+        height: 8vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1.6rem;
+    }
+
+    /* Iconos GIF redes */
+
+    .iconos_redes a img {
+        width: 29px;
+        height: 29px;
+        margin-left: 0.7rem;
+        object-fit: cover;
+        transition: transform .2s ease;
+    }
+
+    .iconos_redes a img:hover {
+        transform: scale(1.15);
+    }
+
+    /* ---------- IMAGEN HEADER ---------- */
+
+    .imagen_header {
+        background-image: url(../img/Header.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 90vh;
+
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            font-size: 2rem;
+            color: rgb(69, 69, 69);
+            margin-top: 0.5rem;
+        }
+
+        h2 {
+            margin-top: 5rem;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4.7rem;
+            margin-top: 0.5rem;
+            color: #5952bc;
+        }
+    }
+
+    .Texto-header-imagen {
+        padding: 2rem;
+        width: 60vh;
+        height: 90vh;
+    }
+
+    .barra-inferior{
+        bottom: 0;
+        width: 100%;      
+        object-fit: cover;
+    }
+
+    /* ---------- BUTTON HEADER ---------- */
+
+    #button-header {
+        width: 40vb;
+        height: 15vh;
+        margin-top: 2rem;
+    }
+
+    .Boton_header {
+        margin-top:1rem;
+        padding: 0.2%;
+        width: 10rem;
+        height: 2.1rem;
+        background-color: #000000;
+        border-radius: 19px;
+        font-size: 1.1rem;
+        font-weight: 400;
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        text-align: center;
+        color: white;
+        transition: 0.5s;
+
+        &:hover{
+        background-color:transparent;
+        border:1.2px solid black;
+        color: rgb(94, 94, 94);
+        transition: border-color 0.3s ease, background-color 0.5s ease;
+            }
+    }   
+
+
+
+
+
+    /* ---------- SECCION LO MAS VENDIDO ---------- */
+
+    .Texto-inicial {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .ropa-mujer {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 20px; 
+        margin-top: 1px;
+    }
+
+
+    /* CARD DE LOS PRODICTOS MAS VENDIDOS */
+
+    .card-producto {
+        width: 320px;
+        background: transparent;
+        border-radius: 10px;
+        overflow: hidden;
+        font-family: "Josefin Sans", sans-serif;
+        padding-bottom: 10px;
+        margin: 1rem;
+        transition: box-shadow 0.3s ease;
+
+        &:hover {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+
+
+    /* Imagen card*/
+    .img-producto {
+        width: 100%;
+        height: 402px;
+        border-radius:15px;
+        padding: 0.5rem;
+    }
+
+    /* Título card*/
+    .titulo-producto {
+        margin:4px;
+        font-size:15px;
+        color: #333;
+    }
+
+
+    /* Caja del precio + carrito */
+    .decimales {
+        font-size: 14px;     
+        font-weight:100px;
+        font-weight:400;
+    }
+
+
+    .precio-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+        margin-top: 5px;
+    }
+
+    /* Precio en estilo SHEIN */
+    .precio {
+        font-size: 20px;
+        color: #ff4d4d;
+    }
+
+    /* Cuadrito de descuento */
+    .descuento {
+        background: #ffe0e0;
+        color: #ff4d4d;
+        padding: 3px 7px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    /* Botón carrito redondo */
+    .btn-carrito {
+        background:transparent;
+        border: 1px solid #000000;
+        border-radius: 12px;
+        width: 65px;
+        height: 25px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+
+        &:hover {
+        transform: scale(1.1);
+        transition:  0.3s ease;
+        border: 1px solid #ff0000;
+        }
+    }
+
+
+
+
+    /* ---------- SECCION DEPORTIVO ---------- */
+
+
+    /* SECCION DE REGALA DEPORTE*/
+
+    .caja_fondo_ropadeportiva{
+        margin: 0.7rem;
+    }
+
+    .imagen_fondo_deporte {
+        display: block; 
+        margin: 0 auto; 
+        max-width: 100%; 
+        height: auto;
+    }
+
+    .seccion_regala_deporte {
+        position: relative; 
+        width: 100%;
+        padding: 1rem 0; 
+        text-align: center; 
+
+        h1{
+            font-family: 'Oswald', Impact, sans-serif;
+            text-align: center;
+            font-size: 4.3rem; 
+            font-weight: 400; 
+            color: black; 
+            margin-top: 30px;
+            padding: 0.9rem;
+        }
+    }
+
+
+    .caja_contenido_ropadeportiva {
+
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        margin-top: -1.5rem; 
+        width: 100%;
+    }
+
+
+
+    /* Subtítulo: "Regalos diseñados para..." */
+    .subtitulo_deporte {
+        font-size: 1.1rem;
+        font-weight: 400; 
+        margin: 0.5rem 0 1.0rem 0;
+        color: black; 
+    }
+
+
+    /* Estilo del botón */
+    .boton_regalos {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 0.9rem 1rem;
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 29px; 
+        width: 10rem;
+
+        &:hover {
+            background-color: #929292;
+            transform: scale(1.1);
+            transition:  0.3s ease;
+        }
+    }
+
+
+
+
+    /*COLORES EN TENDENCIA*/
+    .titulo_tendencia{
+        margin:0;
+        padding:1.5rem;
+        background-color:transparent;
+
+        h3{
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+    }
+
+
+
+    /* ---------- SECCION DEPORTIVO BARRA---------- */
+
+    /*BARRA DE COLORES DE TENDENCIA*/
+
+    .contenedor_color_ropadeportiva {
+        width: 100%;
+        height: 37rem;
+        background-color: transparent;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+
+        /* padding corregido para acercar la barra */
+        padding: 1rem 2.5rem ;
+
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;  /* elimina scroll vertical */
+        object-fit: cover;
+        scroll-behavior: smooth;
+
+        /* Barra horizontal */
+        &::-webkit-scrollbar {
+        height: 7px; /* tamaño de la barra */
+        }
+
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #000000;
+            border-radius: 9px;
+        }
+
+        /*Tamaño de las imagenes de los modelos de tendencia*/
+        img {
+            width: 460px;
+            height: 450px;
+        }
+
+    }
+
+    /*contenedores de ropa teportiva por individual*/
+    .Contenedor_imagen_deporte {
+        width: 650px;
+        height: 550px;
+        background-color: transparent;
+        margin-right: 1rem;
+    }
+
+    /*contenedor de ropa deportiva*/
+    .contenedor_texto_ropadeportida {
+        background-color: transparent;
+        margin: 0.9rem;
+        height: 50px;
+
+        /*contenedor del texto de la ropa deportiva*/
+        h4 {
+            margin-left: 2rem;
+            font-size: 1.4rem;
+            font-weight: 500;
+            padding-top: 1rem;
+            color: black;
+        }
+    }
+
+    /* ---------- SECCION DEPORTIVO MODELO DE TENIS---------- */
+
+    /* CONTENEDOR GENERAL */
+    .apartado_deportivo {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #000; /* solo detrás del panel izquierdo */
+        position: relative;
+    }
+
+    /* PANEL IZQUIERDO CON FONDO NEGRO */
+    .contenido {
+        width: 40%;
+        color: white;
+        padding: 80px;
+        background: black;
+
+        h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1.1;
+        }
+
+        p {
+        margin-top: 20px;
+        font-size: 1.2rem;
+        }
+    }
+
+    /*Boton de la seccion de la odelo de tenis*/
+    .boton {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 25px;
+        border: 1px solid white;
+        color: white;
+        border-radius: 20px;
+        text-decoration: none;
+        transition: 0.3s;
+
+        &:hover {
+            background: white;
+            color: black;
+        }
+    }
+
+    /* IMAGEN PRINCIPAL A LA DERECHA MODELO DE TENIS*/
+    .imagen_principal {
+        width: 60%;
+        height: 100%;
+        overflow: hidden;
+
+        /*Tamaño de la imagen de la modelo de tenis*/
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    /* BARRA INFERIOR “SALE” */
+    .barra_sale {
+        width: 100%;
+        background: #111;
+        color: white;
+        font-size: 1.5rem;
+        padding: 10px 0;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .sale_inner {
+        animation: mover 5s linear infinite;
+    }
+
+    .barra_sale {
+        width: 100%;
+        height: 70px;
+        background-image: url(../img/tu-imagen-sale.png);
+        background-repeat: repeat-x;
+        background-size: contain;
+    }
+
+    /* Animación de desplazamiento horizontal */
+    @keyframes mover {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+
+
+    /* ---------- SECCION CALZADO  ---------- */
+
+    .contenedor_titulo_calzado{
+        margin-top:2rem;
+        padding: 0.5rem;
+        width:100%;
+        background-color: #fafafa;
+    }
+
+    .contenedor_tenis_casuales{
+        display: flex;
+        background-color:transparent;
+        width:100%;
+        justify-content: right;
+        height:36rem;
+        margin-bottom: 23px;
+        padding: 2rem;
+
+    }
+
+    .contenedor_titulo_calzado h2{
+        background-color:transparent;
+        width:100%;
+        text-align:right;
+        padding:0.5rem;
+        padding-right:4rem;
+        color: black;
+    }
+
+    /*Contenedor Calzado de cada modelo*/
+    .contenedor_tenis{
+        width: 300px;
+        height:500px;
+        background-color: transparent;
+        margin:0.8rem;
+        padding:0.5rem;
+        padding-top:9rem;
+
+        img{
+            width: 100%;
+            height: 300px;
+        }
+
+        h3{
+            padding:1.2rem;
+        }
+    } 
+
+ 
+    /*Contenedor Calzado de calazdo central*/
+    .contenedor_tenis_dos{
+        width: 300px;
+        height:500px;
+        background-color: transparent;
+        margin:0.8rem;
+        padding:0.5rem; 
+
+        img{
+            width: 100%;
+            height: 300px;
+        }
+
+        h3{
+            padding:1.2rem;
+        }
+    }
+
+    .Conetenedor_modelo_tenis_casuales{
     margin:0;
     padding:0.5rem;
     margin-right:1.2rem;
-}
-
-/*Contenedor Calzado de cada modelo*/
-.contenedor_tenis{
-    width: 300px;
-    height:500px;
-    background-color: transparent;
-    margin:0.8rem;
-    padding:0.5rem;
-    padding-top:9rem;
-}
-
-/*Contenedor Calzado de calazdo central*/
-.contenedor_tenis_dos{
-    width: 300px;
-    height:500px;
-    background-color: transparent;
-    margin:0.8rem;
-    padding:0.5rem; 
-}
-
+    }
 
 /* ---------- PAGINA DE CONTACTANOS PARTE DEL FORMULARIO  ---------- */
 
@@ -616,13 +625,15 @@ h1, h2, h3 {
     margin-bottom:0;
 }
 
-.contenedor_imagen_formulario img{
-    width:55rem;
-    height:auto;
-}
+
 
 .contenedor_imagen_formulario {
     width:70%;
+
+    img{
+        width:55rem;
+        height:auto;
+    }
 }
 
 
@@ -635,45 +646,52 @@ h1, h2, h3 {
      border-radius: 1rem; 
     box-shadow: 0 4px 14px rgba(0,0,0,0.12);
     border-left:120px;
+
+    h1 { 
+        text-align: center; 
+        color: #222; 
+        font-size: 1.5rem; 
+        margin-bottom: 1.5rem; 
+    }
+
+    label { 
+        display: block;
+        margin-bottom: 0.3rem; 
+        color: #333; 
+        font-weight: bold; 
+    }
+
+    /* OPCIONES DE SELECT */ 
+    select option { 
+        color: #333; 
+    }
+
+    /* INPUTS Y TEXTAREA */ 
+    input[type="text"], input[type="email"],  select,  textarea { 
+        width: 100%; 
+        padding: 0.7rem; 
+        margin-bottom: 1rem; 
+        border: 1px solid #ccc; 
+        border-radius: 6px; 
+        font-size: 0.9rem; 
+    }
+
+    /* PLACEHOLDER */ 
+    input::placeholder, textarea::placeholder { 
+        color: #999; 
+    }
 }
 
 
 
-.forms h1 { 
-    text-align: center; 
-    color: #222; 
-    font-size: 1.5rem; 
-    margin-bottom: 1.5rem; 
-}
-
-.forms label { 
-    display: block;
-    margin-bottom: 0.3rem; 
-    color: #333; 
-    font-weight: bold; 
-}
 
 
-/* INPUTS Y TEXTAREA */ 
-.forms input[type="text"], .forms input[type="email"], .forms select, .forms textarea { 
-    width: 100%; 
-    padding: 0.7rem; 
-    margin-bottom: 1rem; 
-    border: 1px solid #ccc; 
-    border-radius: 6px; 
-    font-size: 0.9rem; 
-}
-
-/* PLACEHOLDER */ 
-.forms input::placeholder, .forms textarea::placeholder { 
-    color: #999; 
-}
 
 
-/* OPCIONES DE SELECT */ 
-.forms select option { 
-    color: #333; 
-}
+
+
+
+
 
 /* BOTÓN Formulario*/ 
 .button_formulario { 
@@ -686,13 +704,14 @@ h1, h2, h3 {
     font-size: 0.9rem; 
     cursor: pointer; 
     transition: background 0.3s; 
+
+    &:hover { 
+        background-color: #009da5; 
+        transform: scale(1.02); 
+        transition: all 0.2s ease-in-out; 
+    }
 }
 
-.button_formulario:hover { 
-    background-color: #009da5; 
-    transform: scale(1.02); 
-    transition: all 0.2s ease-in-out; 
-}
 
 /* CONTENEDOR DEL CHECKBOX Y TEXTO */ 
 .terms { 
@@ -700,25 +719,27 @@ h1, h2, h3 {
     align-items: center; 
     gap: 0.5rem; /* Espacio entre el cuadrado y el texto */ 
     margin-bottom: 1rem; 
-}
 
+    /* TEXTO DE LOS TÉRMINOS */ 
+    label { 
+        font-size: 0.85rem; /* Letra más pequeña */ 
+        color: #666; /* Gris suave */ 
+        font-weight: normal; 
+    }
 
-/* TEXTO DE LOS TÉRMINOS */ 
-.terms label { 
-    font-size: 0.85rem; /* Letra más pequeña */ 
-    color: #666; /* Gris suave */ 
-    font-weight: normal; 
-}
+    /* ENLACE DE LOS TÉRMINOS */ 
+    a { 
+        color: #00bcd4; /* Azul agradable */ 
+        text-decoration: none; 
 
-/* ENLACE DE LOS TÉRMINOS */ 
-.terms a { 
-    color: #00bcd4; /* Azul agradable */ 
-    text-decoration: none; 
-}
-
-.terms a:hover { 
+    &:hover { 
     text-decoration: underline; 
+    }
+    }
 }
+
+
+
  
 
 /* ---------- PAGINA TERMINOS Y CONDICIONES  ---------- */
@@ -734,44 +755,44 @@ h1, h2, h3 {
     font-family: 'Poppins', sans-serif; 
     color: #222; 
     line-height: 1.6; 
-}
 
+    h1{ 
+        font-size: 2rem; 
+        margin-bottom: 1rem; 
+    } 
 
-.privacidad h1 { 
-    font-size: 2rem; 
-    margin-bottom: 1rem; 
-} 
+    h2{ 
+        text-decoration: underline; 
+        margin-top: 1.5rem; 
+        margin-bottom: 0.7rem; 
+    }
 
-.privacidad h2{ 
-    text-decoration: underline; 
-}
+    h3{
+        margin-top: 1.5rem; 
+        margin-bottom: 0.7rem; 
+    }
 
+    a { 
+        color: #259194; 
+        text-decoration: none; 
 
-.privacidad h2, .privacidad h3 { 
-    margin-top: 1.5rem; 
-    margin-bottom: 0.7rem; 
-}
- 
+        &:hover { 
+        text-decoration: underline; 
+        color: #b94040; 
+        }
+    }
 
-.privacidad a { 
-    color: #259194; 
-    text-decoration: none; 
-}
-
-.privacidad a:hover { 
-    text-decoration: underline; 
-    color: #b94040; 
-}
- 
-
-.privacidad ul { 
+    ul { 
     list-style-type:circle; 
     margin-left: 2rem; 
+    }
+
+    p { 
+        margin-bottom: 1rem; 
+    }
 }
 
-.privacidad p { 
-    margin-bottom: 1rem; 
-}
+
 
 /* --- CONTENEDOR GENERAL: TEXTO + VIDEO --- */
 .contenedor_privacidad {
@@ -821,34 +842,58 @@ h1, h2, h3 {
   padding: 40px 48px;
   border-right: 1px solid #000;
   min-height: 180px;
-}
-.footer_col:last-child { 
+
+    /* Títulos y lista */
+    h3 {
+    font-size: 1.4rem;
+    margin: 0 0 22px 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    }
+
+    ul { 
+        list-style: none; 
+        padding: 0; 
+        margin: 0; 
+
+        text-decoration: none; 
+        color: #222; 
+        font-size: 0.95rem; 
+        opacity: 0.9; 
+    }
+
+    li { 
+        margin: 10px 0; 
+
+        text-decoration: none; 
+        color: #222; 
+        font-size: 0.95rem; 
+        opacity: 0.9; 
+    }
+
+    a { 
+        text-decoration: none; 
+        color: #222; 
+        font-size: 0.95rem; 
+        opacity: 0.9; 
+    }
+
+    &:last-child { 
     border-right: none; 
+    }
 }
 
-/* Títulos y lista */
-.footer_col h3 {
-  font-size: 1.4rem;
-  margin: 0 0 22px 0;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
 
-.footer_col ul { 
-    list-style: none; 
-    padding: 0; 
-    margin: 0; 
-}
-.footer_col ul li { 
-    margin: 10px 0; 
-}
 
-.footer_col ul li a { 
-    text-decoration: none; 
-    color: #222; 
-    font-size: 0.95rem; 
-    opacity: 0.9; 
-}
+
+
+
+
+
+
+
+
+
 
 /* --- Sección de pagos (fila debajo de las columnas) --- */
 .footer_payments {
@@ -879,13 +924,15 @@ h1, h2, h3 {
   display: flex;
   gap: 18px;
   align-items: center;
-}
-.fp_right img {
+
+  img {
   height: 34px;    
   width: auto;
   display: block;
   object-fit: contain;
+  }
 }
+
 
 /* --- Línea inferior de copyright --- */
 .footer_bottom {
@@ -919,156 +966,1616 @@ h1, h2, h3 {
     display: none; /* escondido hasta que bajes */
     transition: .3s ease;
     z-index: 999;
-}
 
-#btnArriba:hover {
+    &:hover {
     background: #7e75f6;
     transform: scale(1.1);
+    }
 }
 
 
 
-/* RESPONSIVE TABLET*/
+}
 
-@media (min-width: 481px) and (max-width: 1024px) {
+@media only screen and (max-width: 320px)and (max-width: 480px){
 
-  /* HEADER */
-  .barra_header {
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
+        h1, h2, h3 {
+            font-family: "Josefin Sans", sans-serif;
+        }
 
-  .busqueda input {
-    width: 300px;
-  }
+        /* CELULAR */
 
-  /* IMAGEN HEADER */
-  .imagen_header h2 {
-    font-size: 3.5rem;
-  }
+        .barra_header {
+            background-color: black;
+            flex-direction: column;
+            align-content: center;
+            padding: 0 1rem;
 
-  .Texto-header-imagen {
-    width: 80%;
-  }
+            ul {
+            flex-direction: row-reverse;
+            list-style: none;
+            margin-top:1rem;
+            margin-left: 0.4rem;
+            display: flex;
+            gap: 0.1rem;
+            width:100%;
+            }
 
-  /* PRODUCTOS */
-  .ropa-mujer {
-    justify-content: center;
-  }
+            li {
+                display: inline-block;
+                margin: 0.1rem;
+                padding: 0.2rem 0.6rem;
+                border-radius: 10px;
+                transition: border-color 0.3s ease;
+            }
 
-  .card-producto {
-    width: 45%;
-  }
+            a {
+                font-size: 1.05rem;
+                text-decoration: underline;
+                color: white;
+                transition: color 0.3s ease;
+            }
+        }
 
-  /* DEPORTIVO MODELO */
-  .contenido {
-    width: 50%;
-    padding: 3rem;
-  }
+        .barra_header li:hover a {
+            color: rgb(168, 168, 168);
+            text-decoration: none;
+        }
 
-  .imagen_principal {
-    width: 50%;
-  }
+        /* ----- Busqueda de productos -------- */
+        .busqueda{
+        width: auto;
 
-  /* CALZADO */
-  .contenedor_tenis_casuales {
-    justify-content: center;
-    height: auto;
-  }
+            input {
+                background-color: transparent;
+                border: 2px solid #7e75f6;
+                border-radius: 12px;
+                width: 16rem;
+                height: 1.4rem;
+                color: #7e75f6;
+                padding-left: 8px;
+                justify-content: center;
+            }
 
-  /* FORMULARIO */
-  .forms {
-    width: 90%;
-  }
+            input::placeholder {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 300;
+                color: #a29dff;
+                opacity: 0.9;
+                font-style: italic;
+            }
+        }
 
-  /* FOOTER */
-  .footer_cols {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
+        /* ---------------- BARRA DE DESCUENTO ---------------- */
+
+        .barra_descuentos_header {
+            background-color: #7e75f6;
+            height: 10vh;
+            width: 100%;
+            flex-direction: column-reverse;
+            flex-wrap:wrap;
+            display: flex;
+            align-items: center;
+            padding: 0 0.5rem;
+
+            h1{
+                width:80%;
+            }
+        }
+
+        /* Iconos GIF redes */
+
+        .iconos_redes  {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+            grid-template-rows: repeat(2, auto);   /* 2 filas */
+            gap: 2px; /* espacio entre elementos */
+
+        a img {
+            width: 29px;
+            height: 29px;
+            object-fit: cover;
+            transition: transform .2s ease;
+        }
+
+        & a img:hover {
+        transform: scale(1.15);
+        }
+        }
+
+        .inconos{
+        text-align: center;
+        }
+
+        /* ---------- IMAGEN HEADER ---------- */
+
+        .imagen_header {
+            background-image: url(../img/Header.jpg);
+            background-size:cover;
+            justify-content: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 50vh;
+
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 100;
+                font-size: 1.4rem;
+                color: rgb(69, 69, 69);
+                margin-top: 0.5rem;
+            }
+
+            h2 {
+                margin-top: 5rem;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 2.1rem;
+                margin-top: 0.5rem;
+                color: #5952bc;
+            }
+        }
+
+        .Texto-header-imagen {
+            padding: 1rem;
+            width: 40vh;
+            height: 20vh;
+        }
+
+        .barra-inferior{
+            bottom: 0;
+            width: 100%;      
+            object-fit: cover;
+        }
+
+
+        /* ---------- BUTTON HEADER ---------- */
+
+        #button-header {
+            width: 40vb;
+            height: 15vh;
+            margin-top: 2rem;
+        }
+
+        .Boton_header {
+            margin-top:1rem;
+            padding: 0.1%;
+            width: 9rem;
+            height: 1.9rem;
+            background-color: #000000;
+            border-radius: 19px;
+            font-size: 1.0rem;
+            font-weight: 200;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            text-align: center;
+            color: white;
+            transition: 0.5s;
+
+            &:hover{
+            background-color:transparent;
+            border:1.2px solid black;
+            color: rgb(94, 94, 94);
+            transition: border-color 0.3s ease, background-color 0.5s ease;
+            }
+        }  
+
+        /* ---------- SECCION LO MAS VENDIDO ---------- */
+
+        .Texto-inicial {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .ropa-mujer {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 20px; 
+            margin-top: 1px;
+        }
+
+        /* CARD DE LOS PRODICTOS MAS VENDIDOS */
+
+        .card-producto {
+            width: 320px;
+            background: transparent;
+            border-radius: 10px;
+            overflow: hidden;
+            font-family: "Josefin Sans", sans-serif;
+            padding-bottom: 10px;
+            margin: 1rem;
+            transition: box-shadow 0.3s ease;
+
+            &:hover {
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+            }
+        }
+
+        /* Imagen card*/
+        .img-producto {
+            width: 100%;
+            height: 350px;
+            border-radius:15px;
+            padding: 0.5rem;
+        }
+
+        /* Título card*/
+        .titulo-producto {
+            margin:4px;
+            font-size:15px;
+            color: #333;
+        }
+
+
+        /* Caja del precio + carrito */
+        .decimales {
+            font-size: 14px;     
+            font-weight:100px;
+            font-weight:400;
+        }
+
+
+        .precio-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            margin-top: 5px;
+        }
+
+        /* Precio en estilo SHEIN */
+        .precio {
+            font-size: 20px;
+            color: #ff4d4d;
+        }
+
+        /* Cuadrito de descuento */
+        .descuento {
+            background: #ffe0e0;
+            color: #ff4d4d;
+            padding: 3px 7px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* Botón carrito redondo */
+        .btn-carrito {
+            background:transparent;
+            border: 1px solid #000000;
+            border-radius: 12px;
+            width: 65px;
+            height: 25px;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+
+            &:hover {
+            transform: scale(1.1);
+            transition:  0.3s ease;
+            border: 1px solid #ff0000;
+            }
+        }
+
+
+        /* ---------- SECCION DEPORTIVO ---------- */
+
+
+        /* SECCION DE REGALA DEPORTE*/
+
+        .caja_fondo_ropadeportiva{
+            margin: 0.2rem;
+        }
+
+        .imagen_fondo_deporte {
+            display: block; 
+            max-width:100%; 
+            height: 11rem;
+        }
+
+        .seccion_regala_deporte {
+            position: relative; 
+            width: 100%;
+            padding: 0.5rem 0; 
+            text-align: center; 
+
+            h1{
+                font-family: 'Oswald', Impact, sans-serif;
+                text-align: center;
+                font-size: 3.3rem; 
+                font-weight: 400; 
+                color: black; 
+                margin-top: 2px;
+                padding: 0.8rem;
+            }
+        }
+
+        .caja_contenido_ropadeportiva {
+
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        margin-top: -1.5rem; 
+        width: 100%;
+        }
+
+        /* Subtítulo: "Regalos diseñados para..." */
+        .subtitulo_deporte {
+            font-size: 1.0em;
+            font-weight: 400; 
+            margin: 0.5rem 0 1.0rem 0;
+            color: black; 
+        }
+
+            /* Estilo del botón */
+            .boton_regalos {
+                background-color: black;
+                color: white;
+                border: none;
+                padding: 0.9rem 1rem;
+                margin-bottom: 1rem;
+                font-size: 0.8rem;
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 29px; 
+                width: 9rem;
+
+                &:hover {
+                    background-color: #929292;
+                    transform: scale(1.1);
+                    transition:  0.3s ease;
+                }
+            }
+
+        /*COLORES EN TENDENCIA*/
+        .titulo_tendencia{
+            margin:0;
+            padding:1.2rem;
+            background-color:transparent;
+
+            h3{
+                font-size: 1.3rem;
+                font-weight: 700;
+            }
+        }
+
+
+    /* ---------- SECCION DEPORTIVO BARRA---------- */
+
+    /*BARRA DE COLORES DE TENDENCIA*/
+
+    .contenedor_color_ropadeportiva {
+        width: 100%;
+        height: 22rem;
+        background-color: transparent;
+        margin-top: 0.6rem;
+        margin-bottom: 2rem;
+
+        /* padding corregido para acercar la barra */
+        padding: 0.5rem 2.4rem ;
+
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;  /* elimina scroll vertical */
+        object-fit: cover;
+        scroll-behavior: smooth;
+
+        /* Barra horizontal */
+        &::-webkit-scrollbar {
+        height: 7px; /* tamaño de la barra */
+        }
+
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #000000;
+            border-radius: 9px;
+        }
+
+        /*Tamaño de las imagenes de los modelos de tendencia*/
+        img {
+            width: 260px;
+            height: 250px;
+        }
+
+        }
+
+        /*contenedores de ropa teportiva por individual*/
+        .Contenedor_imagen_deporte {
+            width: 550px;
+            height: 450px;
+            background-color: transparent;
+            margin-right: 1rem;
+        }
+
+        /*contenedor de ropa deportiva*/
+        .contenedor_texto_ropadeportida {
+            background-color: transparent;
+            margin: 0.3rem;
+            height: 40px;
+
+            /*contenedor del texto de la ropa deportiva*/
+            h4 {
+                margin-left: 2rem;
+                font-size: 1.3rem;
+                font-weight: 5  00;
+                padding-top: 1rem;
+                color: black;
+            }
+        }
+
+        /* ---------- SECCION DEPORTIVO MODELO DE TENIS---------- */
+
+        /* CONTENEDOR GENERAL */
+        .apartado_deportivo {
+            width: 100%;
+            height: 60vh;
+            display: flex;   
+            flex-direction: column;     
+            flex-wrap: nowrap;
+            background-color: #000; /* solo detrás del panel izquierdo */
+            
+        }
+
+        /* PANEL IZQUIERDO CON FONDO NEGRO */
+        .contenido {
+            width: 100%;
+            color: white;
+            padding: 20px;
+            background: black;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: space-between;
+
+            h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.0;
+            }
+
+            p {
+            margin-top: 14px;
+            font-size: 1.0rem;
+            }
+        }
+
+        /*Boton de la seccion de la odelo de tenis*/
+        .boton {
+            width:140px;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 5px 15px;
+            border: 1px solid white;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: 0.3s;
+
+            &:hover {
+                background: white;
+                color: black;
+            }
+        }
+
+        /* IMAGEN PRINCIPAL A LA DERECHA MODELO DE TENIS*/
+        .imagen_principal {
+            width: 100%;
+            height: 20rem;
+            overflow: hidden;
+            display:flex;
+
+            /*Tamaño de la imagen de la modelo de tenis*/
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+
+        /* BARRA INFERIOR “SALE” */
+        .barra_sale {
+            width: 100%;
+            background: #111;
+            color: white;
+            font-size: 1.3rem;
+            padding: 5px 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .sale_inner {
+            animation: mover 4s linear infinite;
+        }
+
+        .barra_sale {
+            width: 100%;
+            height: 70px;
+            background-image: url(../img/tu-imagen-sale.png);
+            background-repeat: repeat-x;
+            background-size: contain;
+        }
+
+        /* Animación de desplazamiento horizontal */
+        @keyframes mover {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+
+        /* ---------- SECCION CALZADO  ---------- */
+
+    .contenedor_titulo_calzado{
+            margin-top: 0.5rem;
+            padding: 0.3rem;
+            text-align: right;
+            justify-content: center;    }
+
+        /* Contenedor general */
+        .contenedor_tenis_casuales{
+            justify-content: center;
+            height: auto;
+            align-items: center;
+            padding: 0.5rem 0.5rem;
+        }
+
+        /* Imagen modelo (persona sentada) */
+        .Conetenedor_modelo_tenis_casuales{
+            justify-content: center;
+            
+            padding: 0.1rem;
+        }
+
+        .Conetenedor_modelo_tenis_casuales img{
+            width: 90%;
+            height: auto;
+        }
+
+        /* Tenis laterales */
+        .contenedor_tenis{
+            width: 170px;
+            height: 320px;
+            margin: 0.5rem 0;
+            padding: 0.3rem;
+            padding-top: 4.5rem;
+            text-align: center;
+        }
+
+        .contenedor_tenis img{
+            height: 150px;
+        }
+
+        .contenedor_tenis h3{
+            padding: 0.6rem;
+            font-size: 1rem;
+        }
+
+        /* Tenis central */
+        .contenedor_tenis_dos{
+            width: 200px;
+            height: 360px;
+            margin: 0.6rem 0;
+            padding: 0.4rem;
+            text-align: center;
+        }
+
+        .contenedor_tenis_dos img{
+            height: 160px;
+        }
+
+        .contenedor_tenis_dos h3{
+            padding: 0.6rem;
+            font-size: 1.05rem;
+        }
+
+    /* =========================
+        COLUMNAS DEL FOOTER
+    ========================== */
+
+    .footer_col:first-child {
+        border-top: 1px solid #000;
+        padding-top: 16px;
+    }
+
+
+    .footer{
+            border-bottom: 1px solid #000;
+    }
+    .footer_cols{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px 16px;
+    }
+
+    .footer_col{
+        border-bottom: 1px solid #000;
+        background:transparent;
+
+        ul{
+        list-style: none;
+        padding-left: 1rem;
+        margin: 0;
+        text-align: left;
+        }
+    }
+
+    .footer_col h3{
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .footer_col ul li a{
+        font-size: 0.9rem;
+    }
+
+    /* =========================
+        SECCIÓN DE PAGOS
+    ========================== */
+    .footer_payments{
+        flex-direction: column;
+        gap: 18px;
+        padding: 24px 16px;
+        text-align: center;
+        border-bottom: 1px solid #000;
+        background: #fff;
+    }
+
+    /* Logo */
+    .fp_left .brand{
+        font-size: 1.4rem;
+    }
+
+    /* Texto centro */
+    .fp_center .secure_text{
+        font-size: 0.9rem;
+        margin-right: 0;
+    }
+
+    .fp_left .brand {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+        border-bottom: 1px solid #000;
+    background: #fff;
+    }
+
+    /* Íconos pagos */
+    .fp_right{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .fp_right img{
+        height: 26px;
+    }
+
+    /* =========================
+        COPYRIGHT
+    ========================== */
+    .footer_bottom{
+        padding: 14px 12px;
+    background: #fff;
+    }
+
+    .container_text{
+        font-size: 0.75rem;
+        line-height: 1.9;
+    }
+
+    /* =========================
+        BOTÓN SUBIR
+    ========================== */
+    #btnArriba {
+        position:fixed;
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: none;
+        background: black;
+        color: white;
+        font-size: 1.4rem;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0,0,0,0.25);
+        display: none; /* escondido hasta que bajes */
+        transition: .3s ease;
+        z-index: 999;
+
+        &:hover {
+        background: #7e75f6;
+        transform: scale(1.1);
+        }
+    }
+
 }
 
 
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
 
-/* RESPONSIVE PARA CELULAR */
+            h1, h2, h3 {
+            font-family: "Josefin Sans", sans-serif;
+        }
 
-@media (max-width: 480px) {
+        /* CELULAR */
 
-  /* EVITAR SCROLL HORIZONTAL */
-  body {
-    overflow-x: hidden;
+        .barra_header {
+            background-color: black;
+            flex-direction: column;
+            align-content: center;
+            padding: 0 1rem;
+
+            ul {
+            flex-direction: row-reverse;
+            list-style: none;
+            margin-top:1rem;
+            margin-left: 0.4rem;
+            display: flex;
+            gap: 0.1rem;
+            width:100%;
+            }
+
+            li {
+                display: inline-block;
+                margin: 0.1rem;
+                padding: 0.2rem 0.6rem;
+                border-radius: 10px;
+                transition: border-color 0.3s ease;
+            }
+
+            a {
+                font-size: 1.05rem;
+                text-decoration: underline;
+                color: white;
+                transition: color 0.3s ease;
+            }
+        }
+
+        .barra_header li:hover a {
+            color: rgb(168, 168, 168);
+            text-decoration: none;
+        }
+
+        /* ----- Busqueda de productos -------- */
+        .busqueda{
+        width: auto;
+
+            input {
+                background-color: transparent;
+                border: 2px solid #7e75f6;
+                border-radius: 12px;
+                width: 16rem;
+                height: 1.4rem;
+                color: #7e75f6;
+                padding-left: 8px;
+                justify-content: center;
+            }
+
+            input::placeholder {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 300;
+                color: #a29dff;
+                opacity: 0.9;
+                font-style: italic;
+            }
+        }
+
+
+        /* ---------------- BARRA DE DESCUENTO ---------------- */
+
+        .barra_descuentos_header {
+            background-color: #7e75f6;
+            height: 10vh;
+            width: 100%;
+            flex-direction: column-reverse;
+            flex-wrap:wrap;
+            display: flex;
+            align-items: center;
+            padding: 0 0.5rem;
+
+            h1{
+                width:80%;
+            }
+        }
+
+        /* Iconos GIF redes */
+
+        .iconos_redes  {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+            grid-template-rows: repeat(2, auto);   /* 2 filas */
+            gap: 2px; /* espacio entre elementos */
+
+        a img {
+            width: 29px;
+            height: 29px;
+            object-fit: cover;
+            transition: transform .2s ease;
+        }
+
+        & a img:hover {
+        transform: scale(1.15);
+        }
+        }
+
+        .inconos{
+        text-align: center;
+        }
+
+        /* ---------- IMAGEN HEADER ---------- */
+
+        .imagen_header {
+            background-image: url(../img/Header.jpg);
+            background-size:cover;
+            justify-content: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 50vh;
+
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 100;
+                font-size: 1.4rem;
+                color: rgb(69, 69, 69);
+                margin-top: 0.5rem;
+            }
+
+            h2 {
+                margin-top: 5rem;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 2.1rem;
+                margin-top: 0.5rem;
+                color: #5952bc;
+            }
+        }
+
+        .Texto-header-imagen {
+            padding: 1rem;
+            width: 40vh;
+            height: 20vh;
+        }
+
+        .barra-inferior{
+            bottom: 0;
+            width: 100%;      
+            object-fit: cover;
+        }
+
+
+        /* ---------- BUTTON HEADER ---------- */
+
+        #button-header {
+            width: 40vb;
+            height: 15vh;
+            margin-top: 2rem;
+        }
+
+        .Boton_header {
+            margin-top:1rem;
+            padding: 0.1%;
+            width: 9rem;
+            height: 1.9rem;
+            background-color: #000000;
+            border-radius: 19px;
+            font-size: 1.0rem;
+            font-weight: 200;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            text-align: center;
+            color: white;
+            transition: 0.5s;
+
+            &:hover{
+            background-color:transparent;
+            border:1.2px solid black;
+            color: rgb(94, 94, 94);
+            transition: border-color 0.3s ease, background-color 0.5s ease;
+            }
+        }  
+
+        /* ---------- SECCION LO MAS VENDIDO ---------- */
+
+        .Texto-inicial {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .ropa-mujer {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 20px; 
+            margin-top: 1px;
+        }
+
+        /* CARD DE LOS PRODICTOS MAS VENDIDOS */
+
+        .card-producto {
+            width: 320px;
+            background: transparent;
+            border-radius: 10px;
+            overflow: hidden;
+            font-family: "Josefin Sans", sans-serif;
+            padding-bottom: 10px;
+            margin: 1rem;
+            transition: box-shadow 0.3s ease;
+
+            &:hover {
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+            }
+        }
+
+        /* Imagen card*/
+        .img-producto {
+            width: 100%;
+            height: 350px;
+            border-radius:15px;
+            padding: 0.5rem;
+        }
+
+        /* Título card*/
+        .titulo-producto {
+            margin:4px;
+            font-size:15px;
+            color: #333;
+        }
+
+
+        /* Caja del precio + carrito */
+        .decimales {
+            font-size: 14px;     
+            font-weight:100px;
+            font-weight:400;
+        }
+
+
+        .precio-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            margin-top: 5px;
+        }
+
+        /* Precio en estilo SHEIN */
+        .precio {
+            font-size: 20px;
+            color: #ff4d4d;
+        }
+
+        /* Cuadrito de descuento */
+        .descuento {
+            background: #ffe0e0;
+            color: #ff4d4d;
+            padding: 3px 7px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* Botón carrito redondo */
+        .btn-carrito {
+            background:transparent;
+            border: 1px solid #000000;
+            border-radius: 12px;
+            width: 65px;
+            height: 25px;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+
+            &:hover {
+            transform: scale(1.1);
+            transition:  0.3s ease;
+            border: 1px solid #ff0000;
+            }
+        }
+
+
+        /* ---------- SECCION DEPORTIVO ---------- */
+
+
+        /* SECCION DE REGALA DEPORTE*/
+
+        .caja_fondo_ropadeportiva{
+            margin: 0.2rem;
+        }
+
+        .imagen_fondo_deporte {
+            display: block; 
+            max-width:100%; 
+            height: 11rem;
+        }
+
+        .seccion_regala_deporte {
+            position: relative; 
+            width: 100%;
+            padding: 0.5rem 0; 
+            text-align: center; 
+
+            h1{
+                font-family: 'Oswald', Impact, sans-serif;
+                text-align: center;
+                font-size: 3.3rem; 
+                font-weight: 400; 
+                color: black; 
+                margin-top: 2px;
+                padding: 0.8rem;
+            }
+        }
+
+        .caja_contenido_ropadeportiva {
+
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        margin-top: -1.5rem; 
+        width: 100%;
+        }
+
+        /* Subtítulo: "Regalos diseñados para..." */
+        .subtitulo_deporte {
+            font-size: 1.0em;
+            font-weight: 400; 
+            margin: 0.5rem 0 1.0rem 0;
+            color: black; 
+        }
+
+            /* Estilo del botón */
+            .boton_regalos {
+                background-color: black;
+                color: white;
+                border: none;
+                padding: 0.9rem 1rem;
+                margin-bottom: 1rem;
+                font-size: 0.8rem;
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 29px; 
+                width: 9rem;
+
+                &:hover {
+                    background-color: #929292;
+                    transform: scale(1.1);
+                    transition:  0.3s ease;
+                }
+            }
+
+        /*COLORES EN TENDENCIA*/
+        .titulo_tendencia{
+            margin:0;
+            padding:1.2rem;
+            background-color:transparent;
+
+            h3{
+                font-size: 1.3rem;
+                font-weight: 700;
+            }
+        }
+
+
+    /* ---------- SECCION DEPORTIVO BARRA---------- */
+
+    /*BARRA DE COLORES DE TENDENCIA*/
+
+    .contenedor_color_ropadeportiva {
+        width: 100%;
+        height: 22rem;
+        background-color: transparent;
+        margin-top: 0.6rem;
+        margin-bottom: 2rem;
+
+        /* padding corregido para acercar la barra */
+        padding: 0.5rem 2.4rem ;
+
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;  /* elimina scroll vertical */
+        object-fit: cover;
+        scroll-behavior: smooth;
+
+        /* Barra horizontal */
+        &::-webkit-scrollbar {
+        height: 7px; /* tamaño de la barra */
+        }
+
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #000000;
+            border-radius: 9px;
+        }
+
+        /*Tamaño de las imagenes de los modelos de tendencia*/
+        img {
+            width: 260px;
+            height: 250px;
+        }
+
+        }
+
+        /*contenedores de ropa teportiva por individual*/
+        .Contenedor_imagen_deporte {
+            width: 550px;
+            height: 450px;
+            background-color: transparent;
+            margin-right: 1rem;
+        }
+
+        /*contenedor de ropa deportiva*/
+        .contenedor_texto_ropadeportida {
+            background-color: transparent;
+            margin: 0.3rem;
+            height: 40px;
+
+            /*contenedor del texto de la ropa deportiva*/
+            h4 {
+                margin-left: 2rem;
+                font-size: 1.3rem;
+                font-weight: 5  00;
+                padding-top: 1rem;
+                color: black;
+            }
+        }
+
+        /* ---------- SECCION DEPORTIVO MODELO DE TENIS---------- */
+
+        /* CONTENEDOR GENERAL */
+        .apartado_deportivo {
+            width: 100%;
+            height: 60vh;
+            display: flex;   
+            flex-direction: column;     
+            flex-wrap: nowrap;
+            background-color: #000; /* solo detrás del panel izquierdo */
+            
+        }
+
+        /* PANEL IZQUIERDO CON FONDO NEGRO */
+        .contenido {
+            width: 100%;
+            color: white;
+            padding: 20px;
+            background: black;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: space-between;
+
+            h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.0;
+            }
+
+            p {
+            margin-top: 14px;
+            font-size: 1.0rem;
+            }
+        }
+
+        /*Boton de la seccion de la odelo de tenis*/
+        .boton {
+            width:140px;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 5px 15px;
+            border: 1px solid white;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: 0.3s;
+
+            &:hover {
+                background: white;
+                color: black;
+            }
+        }
+
+        /* IMAGEN PRINCIPAL A LA DERECHA MODELO DE TENIS*/
+        .imagen_principal {
+            width: 100%;
+            height: 20rem;
+            overflow: hidden;
+            display:flex;
+
+            /*Tamaño de la imagen de la modelo de tenis*/
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+
+        /* BARRA INFERIOR “SALE” */
+        .barra_sale {
+            width: 100%;
+            background: #111;
+            color: white;
+            font-size: 1.3rem;
+            padding: 5px 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .sale_inner {
+            animation: mover 4s linear infinite;
+        }
+
+        .barra_sale {
+            width: 100%;
+            height: 70px;
+            background-image: url(../img/tu-imagen-sale.png);
+            background-repeat: repeat-x;
+            background-size: contain;
+        }
+
+        /* Animación de desplazamiento horizontal */
+        @keyframes mover {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+
+        /* ---------- SECCION CALZADO  ---------- */
+
+    .contenedor_titulo_calzado{
+            margin-top: 0.5rem;
+            padding: 0.3rem;
+            text-align: right;
+            justify-content: center;    }
+
+        /* Contenedor general */
+        .contenedor_tenis_casuales{
+            justify-content: center;
+            height: auto;
+            align-items: center;
+            padding: 0.5rem 0.5rem;
+        }
+
+        /* Imagen modelo (persona sentada) */
+        .Conetenedor_modelo_tenis_casuales{
+            justify-content: center;
+            
+            padding: 0.1rem;
+        }
+
+        .Conetenedor_modelo_tenis_casuales img{
+            width: 90%;
+            height: auto;
+        }
+
+        /* Tenis laterales */
+        .contenedor_tenis{
+            width: 170px;
+            height: 320px;
+            margin: 0.5rem 0;
+            padding: 0.3rem;
+            padding-top: 4.5rem;
+            text-align: center;
+        }
+
+        .contenedor_tenis img{
+            height: 150px;
+        }
+
+        .contenedor_tenis h3{
+            padding: 0.6rem;
+            font-size: 1rem;
+        }
+
+        /* Tenis central */
+        .contenedor_tenis_dos{
+            width: 200px;
+            height: 360px;
+            margin: 0.6rem 0;
+            padding: 0.4rem;
+            text-align: center;
+        }
+
+        .contenedor_tenis_dos img{
+            height: 160px;
+        }
+
+        .contenedor_tenis_dos h3{
+            padding: 0.6rem;
+            font-size: 1.05rem;
+        }
+
+    /* =========================
+        COLUMNAS DEL FOOTER
+    ========================== */
+
+    .footer_col:first-child {
+        border-top: 1px solid #000;
+        padding-top: 16px;
+    }
+
+
+    .footer{
+            border-bottom: 1px solid #000;
+    }
+    .footer_cols{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px 16px;
+    }
+
+    .footer_col{
+        border-bottom: 1px solid #000;
+        background:transparent;
+
+        ul{
+        list-style: none;
+        padding-left: 1rem;
+        margin: 0;
+        text-align: left;
+        }
+    }
+
+    .footer_col h3{
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .footer_col ul li a{
+        font-size: 0.9rem;
+    }
+
+    /* =========================
+        SECCIÓN DE PAGOS
+    ========================== */
+    .footer_payments{
+        flex-direction: column;
+        gap: 18px;
+        padding: 24px 16px;
+        text-align: center;
+        border-bottom: 1px solid #000;
+        background: #fff;
+    }
+
+    /* Logo */
+    .fp_left .brand{
+        font-size: 1.4rem;
+    }
+
+    /* Texto centro */
+    .fp_center .secure_text{
+        font-size: 0.9rem;
+        margin-right: 0;
+    }
+
+    .fp_left .brand {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+        border-bottom: 1px solid #000;
+    background: #fff;
+    }
+
+    /* Íconos pagos */
+    .fp_right{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .fp_right img{
+        height: 26px;
+    }
+
+    /* =========================
+        COPYRIGHT
+    ========================== */
+    .footer_bottom{
+        padding: 14px 12px;
+    background: #fff;
+    }
+
+    .container_text{
+        font-size: 0.75rem;
+        line-height: 1.9;
+    }
+
+    /* =========================
+        BOTÓN SUBIR
+    ========================== */
+    #btnArriba {
+        position:fixed;
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: none;
+        background: black;
+        color: white;
+        font-size: 1.4rem;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0,0,0,0.25);
+        display: none; /* escondido hasta que bajes */
+        transition: .3s ease;
+        z-index: 999;
+
+        &:hover {
+        background: #7e75f6;
+        transform: scale(1.1);
+        }
+    }
+
+  /* =========================
+     HEADER / NAV
+  ========================== */
+  .barra_header{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.8rem 1.5rem;
   }
 
-  /* HEADER */
-  .barra_header {
-    flex-direction: column;
-    gap: 0.8rem;
+  .barra_header ul{
+    gap: 0.6rem;
   }
 
-  .busqueda input {
-    width: 100%;
+  .barra_header a{
+    font-size: 1rem;
   }
 
-  /* IMAGEN HEADER */
-  .imagen_header {
-    height: auto;
-    min-height: 60vh;
+  /* =========================
+     BUSCADOR
+  ========================== */
+  .busqueda input{
+    width: 18rem;
+    height: 1.6rem;
   }
 
-  .Texto-header-imagen {
-    width: 100%;
-    height: auto;
+  /* =========================
+     HEADER IMAGEN
+  ========================== */
+  .imagen_header{
+    height: 60vh;
   }
 
-  .imagen_header h2 {
-    font-size: 2.2rem;
+  .imagen_header h2{
+    font-size: 2.4rem;
   }
 
-  /* CARDS */
-  .card-producto {
-    width: 95%;
+  .imagen_header h3{
+    font-size: 1.6rem;
   }
 
-  /* SECCIÓN DEPORTIVO MODELO */
-  .apartado_deportivo {
-    flex-direction: column;
-    height: auto;
+  .Texto-header-imagen{
+    width: 55vh;
   }
 
-  .contenido,
-  .imagen_principal {
-    width: 100%;
-    padding: 1.5rem;
+  /* =========================
+     CARDS PRODUCTOS
+  ========================== */
+  .ropa-mujer{
+    justify-content: space-evenly;
   }
 
-  /* BARRA SCROLL */
-  .contenedor_color_ropadeportiva img {
+  .card-producto{
     width: 280px;
+    margin: 0.8rem;
+  }
+
+  .img-producto{
+    height: 300px;
+  }
+
+  /* =========================
+     SECCIÓN REGALA DEPORTE
+  ========================== */
+  .seccion_regala_deporte h1{
+    font-size: 3.8rem;
+  }
+
+  .subtitulo_deporte{
+    font-size: 1.1rem;
+  }
+
+  /* =========================
+     BARRA COLORES TENDENCIA
+  ========================== */
+  .contenedor_color_ropadeportiva{
+    height: 26rem;
+    padding: 1rem 2rem;
+  }
+
+  .contenedor_color_ropadeportiva img{
+    width: 300px;
+    height: 280px;
+  }
+
+  /* =========================
+     MODELO TENIS (APARTADO NEGRO)
+  ========================== */
+  .apartado_deportivo{
+    flex-direction: row;
+    height: 45vh;
+  }
+
+  .contenido{
+    width: 50%;
+    padding: 32px;
+  }
+
+  .imagen_principal{
+    width: 50%;
     height: auto;
   }
 
-  /* CALZADO */
-  .contenedor_tenis_casuales {
-    flex-direction: column;
-    height: auto;
+  /* =========================
+     CALZADO CASUAL
+  ========================== */
+  .contenedor_tenis_casuales{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
   }
 
-  .contenedor_tenis,
-  .contenedor_tenis_dos {
-    width: 95%;
-    padding-top: 1rem;
+  .contenedor_tenis{
+    width: 200px;
+    height: 360px;
   }
 
-  /* FORMULARIO */
-  .contenedor_todo_formulario {
-    flex-direction: column;
+  .contenedor_tenis_dos{
+    width: 240px;
+    height: 400px;
   }
 
-  .forms {
-    width: 100%;
+  /* =========================
+     FOOTER
+  ========================== */
+  .footer_cols{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 32px 24px;
   }
 
-  /* FOOTER */
-  .footer_cols {
-    grid-template-columns: 1fr;
+  .footer_col{
+    width: 48%;
+    border-bottom: none;
   }
+
+  .footer_col ul{
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .footer_col h3{
+    font-size: 1.05rem;
+  }
+
+  .footer_col ul li a{
+    font-size: 0.95rem;
+  }
+
+  .footer_payments{
+    padding: 32px 24px;
+  }
+
+  .fp_right img{
+    height: 30px;
+  }
+
+  .container_text{
+    font-size: 0.85rem;
+  }
+
 }
+
